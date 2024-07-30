@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+body {
+    background-color: black;
+}
+
+#app {
+    max-width: 70rem;
+    margin: 7rem auto;
+}
+
+/* Cabeçalho */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5.75rem;
+}
+
+.search {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.search input {
+    border-radius: 0.3125rem;
+    background: #06181C;
+    padding: 1rem;
+    width: 28.75rem;
+    border: transparent;
+}
+
+.search input::placeholder {
+    font-size: 1rem;
+}
+
+.search button {
+    width: 10.625rem;
+    height: 3rem;
+    border-radius: 0.3125rem;
+    background: #065E7C;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 2rem;
+    gap: 0.5rem;
+    font-weight: bold;
+    border: none;
+}
+
+.search button:hover {
+    background-color: white;
+    color: #065E7C;
+    cursor: pointer;
+}
+
+.search button svg {
+    fill: white;
+}
+
+.search button:hover svg {
+    fill: #065E7C;
+}
+
+
+/* TABELA */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Cabeçalho da Tabela */
+
+thead {
+    background: #092D38;
+    text-align: left;
+    font-size: 1.25rem;
+}
+
+thead th {
+    padding: 1rem 2.5rem;
+}
+
+thead th:first-child {
+    border-top-left-radius: 0.75rem;
+}
+
+thead th:last-child{
+    border-top-right-radius: 0.75rem;
+}
+
+/* Itens da Tabela */
+
+table tr:nth-child(odd) {
+    background: rgba(6, 22, 27, 0.50);
+}
+table tr:nth-child(even) {
+    background: #06181C;
+}
+
+td.user {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+td.user a {
+    text-decoration: none;
+}
+
+td.user a span {
+    font-weight: 400;
+}
+
+table td { 
+    padding: 1rem 2.5rem; 
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+td img {
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+td button {
+    background: transparent;
+    border: none; 
+    color: #F75A68;
+    font-size: 1.25rem;
+}
+
+td button:hover {
+    color: #ec3d4c;
+    cursor: pointer;
+}
